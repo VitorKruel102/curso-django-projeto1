@@ -8,13 +8,3 @@ def home(request):
     context = {'name': 'Vitor'}
     return render(request, template_name, context)
 
-
-def contact(request):
-    """Contact page."""
-    template_name = 'recipes/contact.html'
-    return render(request, template_name)
-
-
-def about(request):
-    """About page."""
-    return HttpResponse('About')
