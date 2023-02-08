@@ -4,7 +4,18 @@ Link para html:
 Links para Icons:
     https://fontawesome.com/search?s=solid&f=sharp&o=r
 """
+
 font_awesome = ...
 brands = Utilizados para redes sociais; 
 solid = Icons tipo solido;
 
+"""
+Estrutura de uma aplicação:
+
+    app:
+        templates:
+            |
+            -- pages:       # Páginas do sites;
+            |
+            -- partials:    # Página padrão;
+"""

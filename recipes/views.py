@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def home(request):
     """Website homepage."""
-    template_name = 'recipes/home.html'
+    template_name = 'recipes/pages/home.html'
     context = {'name': 'Vitor'}
     return render(request, template_name, context)
 
