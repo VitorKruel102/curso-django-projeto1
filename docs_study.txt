@@ -1,0 +1,10 @@
+"""
+Link para html:
+    https://cdnjs.com/libraries/font-awesome
+Links para Icons:
+    https://fontawesome.com/search?s=solid&f=sharp&o=r
+"""
+font_awesome = ...
+brands = Utilizados para redes sociais; 
+solid = Icons tipo solido;
+
