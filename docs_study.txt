@@ -1,4 +1,5 @@
 """
+=================================================================
 Link para html:
     https://cdnjs.com/libraries/font-awesome
 Links para Icons:
@@ -9,7 +10,9 @@ font_awesome = ...
 brands = Utilizados para redes sociais; 
 solid = Icons tipo solido;
 
+
 """
+=================================================================
 Estrutura de uma aplicação:
 
     app:
@@ -18,4 +21,15 @@ Estrutura de uma aplicação:
             -- pages:       # Páginas do sites;
             |
             -- partials:    # Página padrão;
+"""
+
+"""
+=================================================================
+Grid - Html
+
+CSS:
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));    # Tamanho minimo para depois respandir
+    gap: var(--spacing-gutter-large);                               # Espaçamento entre os grid
+
 """
