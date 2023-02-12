@@ -33,3 +33,14 @@ CSS:
     gap: var(--spacing-gutter-large);                               # Espaçamento entre os grid
 
 """
+
+"""
+=================================================================
+Arquivos Static:
+
+    STATIC_URL = '/static/' # Arquivo dentro de aplicação
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'base_static'),
+    ]   # Adicionar arquivos static globais(sem aplicação)
+
+"""
