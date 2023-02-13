@@ -10,7 +10,7 @@ def home(request):
 
 def recipe(request, id):
     """Website homepage."""
-    template_name = 'recipes/pages/home.html'
+    template_name = 'recipes/pages/recipe-view.html'
     context = {'name': 'Vitor'}
     return render(request, template_name, context)
 
