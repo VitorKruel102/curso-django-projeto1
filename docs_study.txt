@@ -1,17 +1,14 @@
-"""
 =================================================================
 Link para html:
     https://cdnjs.com/libraries/font-awesome
 Links para Icons:
     https://fontawesome.com/search?s=solid&f=sharp&o=r
-"""
+
 
 font_awesome = ...
 brands = Utilizados para redes sociais; 
 solid = Icons tipo solido;
 
-
-"""
 =================================================================
 Estrutura de uma aplicação:
 
@@ -21,9 +18,7 @@ Estrutura de uma aplicação:
             -- pages:       # Páginas do sites;
             |
             -- partials:    # Página padrão;
-"""
 
-"""
 =================================================================
 Grid - Html
 
@@ -32,9 +27,6 @@ CSS:
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));    # Tamanho minimo para depois respandir
     gap: var(--spacing-gutter-large);                               # Espaçamento entre os grid
 
-"""
-
-"""
 =================================================================
 Arquivos Static:
 
@@ -43,4 +35,27 @@ Arquivos Static:
         os.path.join(BASE_DIR, 'base_static'),
     ]   # Adicionar arquivos static globais(sem aplicação)
 
-"""
+=================================================================
+App Names:
+    Dentro da URL do aplicação, podemos contruir uma variavel
+    chamada app_name, utilizada para colocar um nome comum
+    entre as url.
+
+    Exemplo:
+        # Como era feito
+            .URL:
+                path(.........., name='recipes-home'),
+                path(.........., name='recipes-recipe'),
+
+            .template:
+                {% url 'recipes-home' %}
+        
+        # Como vai ser:
+            .URL:
+                app_name = 'recipes'
+
+                path(.........., name='home'),
+                path(.........., name='recipe'),
+
+            .template:
+                {% url 'recipes:home' %}
